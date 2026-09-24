@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karol Burda">
+    <link rel="stylesheet" href="style.css">
+    <title>Atelier Glina</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>Atelier Glina</h1>
+
+        <a href="#wyr">Wyroby</a>
+        <a href="#cen">Cennik</a>
+        <a href="#zap">Zapis</a>
+
+    </header>   
+
+    <main>
+
+        <h3>Usługi</h3>
+        
+        <section class="uslugi">
+
+            <dl>
+                <dt>Kubek</dt>
+                <dd>od 45 zł</dd>
+            </dl>
+            <dl>
+                <dt>Miska</dt>
+                <dd>od 70 zł</dd>
+            </dl>
+            <dl>
+                <dt>Wazon</dt>
+                <dd>od 90 zł</dd>
+            </dl>
+
+        </section>
+
+
+        <h3>Wyroby</h3>
+
+        <section class="wyroby" id="wyr">
+
+            <div>
+                <img src=" https://picsum.photos/400/260?random=1" alt="Losowe zdjęcie">
+                <h5>Kubek Kamienny</h5>
+                <p>Kubek toczony ręcznie, szkliwiony</p>
+            </div>
+
+            <div>
+                <img src="https://picsum.photos/400/260?random=2" alt="Losowe zdjęcie">
+                <h5>Miska na owoce</h5>
+                <p>Szeroka miska stołowa</p>
+            </div>
+
+            <div>
+                <img src="https://picsum.photos/400/260?random=3" alt="Losowe zdjęcie">
+                <h5>Wazon wysoki</h5>
+                <p>Wazon na kwiaty cięte</p>
+            </div>
+
+        </section>
+
+
+        <h3>Cennik</h3>
+
+        <section class="cennik" id="cen">
+
+            <table id="tabel">
+
+                <tr>
+                    <th>Wyrób</th>
+                    <th>Wypał</th>
+                    <th>Cena</th>   
+                </tr>
+                <tr>
+                    <td>Kubek</td>
+                    <td>2 dni</td>
+                    <td>45 zł</td>
+                </tr>
+                <tr>
+                    <td>Miska</td>
+                    <td>3 dni</td>
+                    <td>70 zł</td>
+                </tr>
+                <tr>
+                    <td>Wazon</td>
+                    <td>4 dni</td>
+                    <td>90 zł</td>
+                </tr>
+
+            </table>
+        
+        </section>
+
+
+        <h3>Zapis na wypał</h3>
+
+        <section class="zapis" id="zap">
+
+            <form name="formularz" id="form">
+
+                <label>Imię
+                    <input type="text" name="imie" required><br>
+                </label>
+                <label>E-mail
+                    <input type="email" name="mail" required><br>
+                </label>
+                <label>Wyrób
+                    <select name="wyrob"required>
+                        <option value="Kubek">Kubek</option>
+                        <option value="Miska">Miska</option>
+                        <option value="Wazon">Wazon</option>
+                    </select><br>
+                </label>
+                <input type="button" value="Zapisz się na wypał" onclick="funkcja()">
+                
+            </form>
+
+            <div>
+                <p id="dane"><br></p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Karol Burda 4i</p>
+
+    </footer>
+
+    <script>
+
+        function funkcja(){
+
+            let imie1=document.forms.formularz.imie.value
+            let mail1=document.forms.formularz.mail.value
+            let wyrob1=document.forms.formularz.wyrob.value
+
+            document.getElementById("dane").innerHTML = imie1 + " (" + mail1 + ") zapisał/a się na wypał wyrobu: " + wyrob1;
+
+            // let tabela = document.getElementById("tabel");
+            // let wiersze = tabela.getElementsByTagName("tr");
+
+            // let wypal1;
+            // let cena1;
+
+            // for (let i = 1; i < wiersze.length; i++) {
+            //     let komorki = wiersze[i].getElementsByTagName("td");
+
+            //     if (komorki[0].innerText == wyrob1) {
+            //     wypal1 = komorki[1].innerText;
+            //     cena1 = komorki[2].innerText;
+            //     }
+            // }
+
+            // document.getElementById("dane").innerHTML = imie1 + " (" + mail1 + ") zapisał/a się na wypał wyrobu: " + wyrob1 + ". Czas wypału: " + wypal1 + ". Cena: " + cena1;
+
+        }
+
+    </script>
+
+</body>
+</html>
