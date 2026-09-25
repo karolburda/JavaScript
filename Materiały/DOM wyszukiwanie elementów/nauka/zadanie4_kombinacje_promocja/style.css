@@ -1,0 +1,10 @@
+﻿body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; color: #333; padding: 20px; max-width: 760px; margin: 0 auto; }
+.card, .karta, .produkt { background: #fff; padding: 16px 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 12px; }
+h1, h2 { color: #2c3e50; margin-top: 0; }
+.cena, .sala { font-weight: 700; }
+.promocja { border-left: 4px solid #e67e22; padding-left: 12px; }
+.wazne { border-left: 4px solid #c0392b; padding-left: 12px; }
+.podglad { min-height: 2.2em; padding: 10px; background: #fafafa; border: 1px solid #ddd; margin: 8px 0; font-family: Consolas, 'Courier New', monospace; }
+nav a, #menu a, footer a { margin-right: 10px; }
+footer { margin-top: 24px; font-size: 0.9rem; color: #666; }
+ul { padding-left: 1.2rem; }
