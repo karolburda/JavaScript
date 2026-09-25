@@ -1,0 +1,121 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 { margin: 0; font-size: 1.6rem; }
+
+.koszyk-info {
+    background: #3498db;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.pasek-filtrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 40px;
+    background: white;
+    border-bottom: 1px solid #dce1e7;
+    flex-wrap: wrap;
+}
+
+.pasek-filtrow span { color: #888; font-size: 0.9rem; }
+.separator { color: #dce1e7; font-size: 1.4rem; }
+
+.pasek-filtrow button {
+    padding: 6px 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.pasek-filtrow button:hover { border-color: #3498db; color: #3498db; }
+
+.pasek-filtrow button.aktywny-filtr {
+    background: #3498db;
+    border-color: #3498db;
+    color: white;
+}
+
+.btn-akcja {
+    background-color: #ecf0f1 !important;
+    border-color: #bdc3c7 !important;
+    color: #555 !important;
+}
+
+.btn-akcja:hover { background-color: #d5d8dc !important; }
+
+.siatka-kart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 40px;
+    justify-content: flex-start;
+}
+
+.karta {
+    background: white;
+    border: 2px solid #dce1e7;
+    border-radius: 12px;
+    padding: 24px;
+    width: 220px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.karta:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+
+.ikona { font-size: 2.5rem; margin-bottom: 10px; }
+
+.karta h2 { font-size: 1rem; margin: 0 0 6px; }
+.kategoria { font-size: 0.8rem; color: #888; margin: 0 0 8px; }
+.cena { font-size: 1.2rem; font-weight: bold; color: #2980b9; margin: 0 0 16px; }
+
+.btn-koszyk {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.btn-koszyk:hover { background-color: #2980b9; }
+
+/* Stan: karta dodana do koszyka */
+.karta.w-koszyku {
+    border-color: #27ae60;
+    background-color: #f0fdf4;
+}
+
+.karta.w-koszyku .btn-koszyk {
+    background-color: #27ae60;
+}
+
+.karta.w-koszyku .btn-koszyk:hover {
+    background-color: #1e8449;
+}

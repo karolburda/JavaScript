@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f4f6f8;
+}
+
+h1 { color: #2c3e50; }
+h2 { font-size: 1rem; color: #555; margin-bottom: 10px; }
+
+.sekcja {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dce1e7;
+}
+
+#panel-inline {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+}
+
+.blok {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 6px;
+    border-radius: 8px;
+    background-color: #d5d8dc;
+    font-weight: bold;
+}
+
+/* Tryb ciemny */
+#strefa-dark {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#strefa-dark.dark-mode {
+    background-color: #1c2833;
+    color: #ecf0f1;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover { background-color: #2980b9; }
+
+/* Opcje */
+.opcja {
+    padding: 12px 16px;
+    margin: 6px 0;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.opcja.aktywna {
+    background-color: #2980b9;
+    color: white;
+    border-color: #1a5276;
+}
+
+/* Komunikat */
+#komunikat {
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#komunikat.sukces {
+    background-color: #d5f5e3;
+    color: #1e8449;
+    border: 2px solid #27ae60;
+}
+
+#komunikat.blad {
+    background-color: #fadbd8;
+    color: #922b21;
+    border: 2px solid #e74c3c;
+}
+
+#btn-zmien { margin-top: 0; }

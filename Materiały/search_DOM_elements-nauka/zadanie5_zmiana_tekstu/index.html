@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 5 – Zmiana tekstu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="tytul">Strona do modyfikacji tekstu</h1>
+
+    <section class="karta">
+        <h2>Demonstracja: textContent vs innerHTML</h2>
+        <div id="demo-tekst">Tu pojawi się efekt textContent lub innerHTML.</div>
+    </section>
+
+    <section class="karta">
+        <h2>Lista wyników</h2>
+        <div id="lista-wynikow">Tu JS wstawi dynamicznie listę HTML.</div>
+    </section>
+
+    <section class="karta">
+        <h2>Interaktywne powitanie</h2>
+        <label for="pole-imienia">Twoje imię:</label>
+        <input type="text" id="pole-imienia" placeholder="Wpisz imię...">
+        <button id="btn-przywitaj">Przywitaj mnie!</button>
+        <p id="powitanie">Powitanie pojawi się tutaj.</p>
+    </section>
+
+    <section class="karta">
+        <h2>Licznik kliknięć</h2>
+        <p>Liczba kliknięć: <span id="licznik">0</span></p>
+        <button id="btn-dodaj">Kliknij mnie (+1)</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

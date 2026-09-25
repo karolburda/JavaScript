@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f0f4f8;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.kontener {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.karta {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.karta h2 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.karta p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}

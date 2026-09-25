@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 4 – querySelectorAll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>querySelectorAll – wyszukiwanie wielu elementów</h1>
+
+    <section class="sekcja-akapity">
+        <p>Pierwszy paragraf w sekcji akapitów.</p>
+        <p>Drugi paragraf — zmień kolor wszystkich na raz!</p>
+        <p>Trzeci paragraf, też zostanie zmieniony.</p>
+    </section>
+
+    <section class="sekcja-wiersze">
+        <h2>Lista produktów</h2>
+        <div class="wiersz kategoria-a" data-priorytet="wysoki">Produkt A – kategoria A, priorytet wysoki</div>
+        <div class="wiersz kategoria-b">Produkt B – kategoria B</div>
+        <div class="wiersz kategoria-a" data-priorytet="niski">Produkt C – kategoria A, priorytet niski</div>
+        <div class="wiersz kategoria-b" data-priorytet="wysoki">Produkt D – kategoria B, priorytet wysoki</div>
+        <div class="wiersz kategoria-a">Produkt E – kategoria A</div>
+    </section>
+
+    <section class="sekcja-tabela">
+        <h2>Tabela zamówień</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Klient</th>
+                    <th>Kwota</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>001</td><td>Jan Kowalski</td><td>250 zł</td><td>Zrealizowane</td></tr>
+                <tr><td>002</td><td>Anna Nowak</td><td>480 zł</td><td>W trakcie</td></tr>
+                <tr><td>003</td><td>Piotr Wiśniewski</td><td>120 zł</td><td>Zrealizowane</td></tr>
+                <tr><td>004</td><td>Marta Zielińska</td><td>990 zł</td><td>Anulowane</td></tr>
+                <tr><td>005</td><td>Tomasz Lewandowski</td><td>310 zł</td><td>W trakcie</td></tr>
+                <tr><td>006</td><td>Karolina Dąbrowska</td><td>75 zł</td><td>Zrealizowane</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="sekcja-lista">
+        <h2>Lista główna z podlistą</h2>
+        <ul id="glowna-lista">
+            <li>Element 1 – bezpośrednie dziecko</li>
+            <li>Element 2 – bezpośrednie dziecko</li>
+            <li>
+                Element 3 – z podlistą
+                <ul class="podlista">
+                    <li>Podelement 3.1 – zagnieżdżony</li>
+                    <li>Podelement 3.2 – zagnieżdżony</li>
+                </ul>
+            </li>
+            <li>Element 4 – bezpośrednie dziecko</li>
+        </ul>
+    </section>
+
+    <section class="sekcja-produkty">
+        <h2>Produkty ze statusem VIP</h2>
+        <p class="produkt">Kawa VIP – premium blend</p>
+        <p class="produkt">Herbata zwykła</p>
+        <p class="produkt">Sok VIP – wyciskany</p>
+        <p class="produkt">Woda mineralna</p>
+        <p class="produkt">Czekolada VIP – belgijska</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
