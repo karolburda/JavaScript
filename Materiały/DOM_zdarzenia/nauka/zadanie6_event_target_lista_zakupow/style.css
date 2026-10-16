@@ -1,0 +1,46 @@
+body {
+  background-color: #fce4ec;
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Styl "notatki" */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.paper {
+  background-color: #fff;
+  width: 300px;
+  padding: 40px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  transform: rotate(-2deg);
+}
+
+ul {
+  list-style-type: none; /* Usuwa kropki */
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px dashed #ccc;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Klasa, którą będziemy dodawać w JS */
+.done {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.hint {
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 20px;
+  text-align: center;
+}
