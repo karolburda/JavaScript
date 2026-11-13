@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Zamówień Serwisu Komputerowego</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Serwis i Naprawa PC-Expert</h1>
+  </header>
+  <main>
+    <section class="karta">
+      <h2>Konfiguracja koszyka usług serwisowych</h2>
+      <div class="form-grid">
+        <div class="form-grupa">
+          <label for="nazwa-uslugi">Nazwa usługi serwisowej:</label>
+          <input type="text" id="nazwa-uslugi" placeholder="np. Diagnostyka płyty głównej">
+        </div>
+        <div class="form-grupa">
+          <label for="cena-uslugi">Cena (zł):</label>
+          <input type="number" id="cena-uslugi" min="10" step="10" placeholder="np. 150">
+        </div>
+      </div>
+      <button id="btn-dodaj-usluge" type="button">Dodaj usługę do rachunku</button>
+      <h3>Wybrane pozycje na rachunku:</h3>
+      <ul id="lista-uslug" class="lista-uslug"></ul>
+      <div id="podsumowanie-kosztu" class="podsumowanie">Łączny koszt zamówionych usług serwisowych: 0 zł</div>
+    </section>
+  </main>
+  <footer>
+    <p>INF.03 · PAI · XXI c.</p>
+  </footer>
+</body>
+</html>

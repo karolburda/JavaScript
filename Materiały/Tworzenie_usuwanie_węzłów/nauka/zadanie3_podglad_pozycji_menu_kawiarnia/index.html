@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Karta Pozycji Menu Kawiarni</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>System Zamówień Kawiarni</h1>
+  </header>
+  <main>
+    <section class="karta">
+      <h2>Dodaj nowy napój do karty menu</h2>
+      <div class="form-grupa">
+        <label for="nazwa-napoju">Nazwa napoju:</label>
+        <input type="text" id="nazwa-napoju" placeholder="np. Mocha Karmelowa">
+      </div>
+      <p id="etykieta-podgladu" class="podglad">Podgląd: Czekam na wpisanie nazwy napoju...</p>
+      <button id="btn-zatwierdz-pozycje" type="button">Zatwierdź pozycję</button>
+      <h3>Aktualna karta menu:</h3>
+      <ul id="lista-menu" class="lista">
+        <li class="pozycja-menu">Napój deserowy: Espresso Doppio</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>INF.03 · PAI · XXI c.</p>
+  </footer>
+</body>
+</html>
