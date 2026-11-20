@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>System Alarmowy Oddziału SOR</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>System Alarmowy Oddziału SOR</h1>
+  </header>
+  <main>
+    <section class="karta">
+      <h2>Procedura Triage – Zgłoszenie Kodu</h2>
+      <div class="form-grupa">
+        <label>Wybierz kod pilności przyjęcia:</label>
+        <div class="radio-opcje">
+          <label><input type="radio" name="kod-pilnosci" value="CZERWONY" checked> Czerwony (Stan zagrożenia życia)</label>
+          <label><input type="radio" name="kod-pilnosci" value="POMARAŃCZOWY"> Pomarańczowy (Pilny przypadek)</label>
+          <label><input type="radio" name="kod-pilnosci" value="ŻÓŁTY"> Żółty (Stabilny)</label>
+        </div>
+      </div>
+      <button id="btn-zglos-alarm" type="button">Wprowadź alert do kolejki</button>
+      <ul id="kolejka-sor" class="lista">
+        <li class="wpis-sor-standard">Rutynowe przyjęcie planowe pacjenta</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>INF.03 · PAI · XXI c.</p>
+  </footer>
+</body>
+</html>

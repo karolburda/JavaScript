@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Dekontaminacji Aparatury</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Panel Dekontaminacji Aparatury</h1>
+  </header>
+  <main>
+    <section class="karta">
+      <h2>Rejestr strefy czystej laboratorium</h2>
+      <div class="form-grupa">
+        <label for="opis-materialu">Nazwa materiału biologicznego:</label>
+        <input type="text" id="opis-materialu" placeholder="np. Posiew bakteryjny szczep B">
+      </div>
+      <div class="przyciski">
+        <button id="btn-wprowadz-material" type="button">Wprowadź materiał</button>
+        <button id="btn-sterylizuj-komore" type="button">Sterylizuj komorę (Reset)</button>
+      </div>
+      <h3>Stan biologiczny komory:</h3>
+      <div id="rejestr-komory" class="dziennik">
+        <p class="stan-sterylny">Komora zdekontaminowana. Pełna sterylność mikrobiologiczna.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>INF.03 · PAI · XXI c.</p>
+  </footer>
+</body>
+</html>

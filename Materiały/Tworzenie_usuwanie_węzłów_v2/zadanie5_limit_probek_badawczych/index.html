@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontroler Wirowania Próbek Krwi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Kontroler Wirowania Próbek Krwi</h1>
+  </header>
+  <main>
+    <section class="karta">
+      <h2>Załadunek komory rotora (Limit: 6 próbek)</h2>
+      <div id="status-wirowki"></div>
+      <div class="form-grupa">
+        <label for="nr-probki">Identyfikator fiolki:</label>
+        <input type="text" id="nr-probki" placeholder="np. LAB-904">
+      </div>
+      <button id="btn-zaladuj-probke" type="button">Załaduj próbkę</button>
+      <ul id="komora-wirowki" class="lista">
+        <li class="fiolka-badawcza">Próbka laboratoryjna ID: LAB-101</li>
+        <li class="fiolka-badawcza">Próbka laboratoryjna ID: LAB-102</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>INF.03 · PAI · XXI c.</p>
+  </footer>
+</body>
+</html>
