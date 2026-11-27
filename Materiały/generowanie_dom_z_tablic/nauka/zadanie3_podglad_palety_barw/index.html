@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Próbnik Palety Barw Studia Graficznego</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontener">
+    <header>
+      <h1>Wybór Motywu i Odcieni Projektu</h1>
+    </header>
+
+    <main>
+      <section class="panel-opcji">
+        <label for="usluga">Wybierz paletę bazową:</label>
+        <select id="usluga">
+          <option value="niebieski">Odcienie błękitu</option>
+          <option value="szmaragd">Odcienie szmaragdowe</option>
+          <option value="bursztyn">Odcienie bursztynowe</option>
+        </select>
+      </section>
+
+      <section class="sekcja-probki">
+        <h2>Dostępne próbki odcieni:</h2>
+        <div id="lista-zamowien" class="siatka-probek"></div>
+      </section>
+
+      <section class="sekcja-podglad">
+        <h2>Podgląd wybranego koloru:</h2>
+        <div id="wynik" class="pole-podgladu">Kliknij dowolny kafelek barwy, aby zobaczyć podgląd</div>
+        <p id="podsumowanie" class="etykieta-podsumowania">Wybrany odcień: brak wyboru</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>INF.03 · PAI · XXI c.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

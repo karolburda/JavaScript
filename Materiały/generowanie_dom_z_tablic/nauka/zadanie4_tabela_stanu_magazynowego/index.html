@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejestr Magazynu Podzespołów</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontener">
+    <header>
+      <h1>Kontrola Stanów Magazynowych Hurtowni</h1>
+    </header>
+
+    <main>
+      <section class="sekcja-tabeli">
+        <table id="tabela-danych">
+          <thead>
+            <tr>
+              <th>Nazwa towaru</th>
+              <th>Dostępna ilość</th>
+              <th>Cena jednostkowa</th>
+              <th>Status zaopatrzenia</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section class="sekcja-raportu">
+        <p id="podsumowanie" class="raport-statusu">Liczba pozycji wymagających zamówienia: 0</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>INF.03 · PAI · XXI c.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

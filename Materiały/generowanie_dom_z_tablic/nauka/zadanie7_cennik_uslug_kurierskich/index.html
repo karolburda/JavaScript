@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Przesyłek Kurierskich</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontener">
+    <header>
+      <h1>Cennik Nadania Przesyłek Spedycyjnych</h1>
+    </header>
+
+    <main>
+      <section class="sekcja-kart">
+        <h2>Dostępne gabaryty paczek:</h2>
+        <div id="lista-zamowien" class="siatka-paczek"></div>
+      </section>
+
+      <section class="sekcja-opcji">
+        <label>
+          <input type="checkbox" id="regulamin"> Dostawa ekspresowa gwarantowana (+15 zł)
+        </label>
+      </section>
+
+      <section class="sekcja-wynik">
+        <p id="podsumowanie" class="podsumowanie-wysylki">Wybierz gabaryt przesyłki, aby przeliczyć koszt nadania</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>INF.03 · PAI · XXI c.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

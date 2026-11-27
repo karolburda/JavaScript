@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejestr Zleceń Warsztatu Samochodowego</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontener">
+    <header>
+      <h1>Kolejka Zleceń Serwisu Pojazdów</h1>
+    </header>
+
+    <main>
+      <section class="panel-akcji">
+        <button id="btn-dodaj" class="przycisk">Zarejestruj nową naprawę</button>
+        <button id="btn-usun" class="przycisk przycisk-reset">Przywróć stan bazowy rejestru</button>
+      </section>
+
+      <section class="sekcja-tabeli">
+        <table id="tabela-danych">
+          <thead>
+            <tr>
+              <th>Zakres usługi serwisowej</th>
+              <th>Pojazd klienta</th>
+              <th>Szacowany koszt</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p id="podsumowanie" class="licznik-zlecen">Zarejestrowane zlecenia w kolejce warsztatu: 0</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>INF.03 · PAI · XXI c.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konfigurator Zestawu Biurowego</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontener">
+    <header>
+      <h1>Dobór Sprzętu i Stanowisk Pracowniczych</h1>
+    </header>
+
+    <main>
+      <section class="formularz-zestawu">
+        <div class="pole">
+          <label for="usluga">Wybierz profil stanowiska:</label>
+          <select id="usluga">
+            <option value="programista">Stanowisko programistyczne</option>
+            <option value="ksiegowosc">Stanowisko finansowo-księgowe</option>
+            <option value="grafik">Stanowisko graficzne i DTP</option>
+          </select>
+        </div>
+
+        <div class="pole">
+          <label for="ilosc">Liczba planowanych stanowisk:</label>
+          <input type="number" id="ilosc" value="2" min="1" max="50">
+        </div>
+
+        <button id="btn-dodaj" class="przycisk">Generuj wycenę zestawu</button>
+      </section>
+
+      <section class="sekcja-wynik">
+        <h2>Składniki zestawu stanowiskowego:</h2>
+        <div id="lista-zamowien"></div>
+        <p id="podsumowanie" class="podsumowanie-tekst">Wybierz parametry i kliknij przycisk generowania.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>INF.03 · PAI · XXI c.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

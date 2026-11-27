@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konfigurator Nośników Danych</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kontener">
+    <header>
+      <h1>Filtr Pojemności Dysków SSD</h1>
+    </header>
+
+    <main>
+      <section class="panel-kontroli">
+        <label for="ilosc">Ustaw limit pojemności:</label>
+        <input type="range" id="ilosc" min="100" max="2000" step="100" value="500">
+        <p id="podsumowanie" class="odczyt-wartosci">Maksymalna pojemność: 500 GB</p>
+      </section>
+
+      <section class="sekcja-wynik">
+        <h2>Dopasowane dyski w magazynie:</h2>
+        <div id="lista-zamowien" class="siatka-dyskow"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>INF.03 · PAI · XXI c.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
